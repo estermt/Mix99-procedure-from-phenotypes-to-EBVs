@@ -23,7 +23,7 @@ The pipeline is designed to be modular, reproducible, and adaptable to future ev
 # Workflow Diagram
 
 ```mermaid
-graph LR
+graph TD
 A[Raw Data] --> B[Cleaning & QC - R]
 B --> C[Relax2 Processing]
 C --> D[Genotype Recoding - Fortran]
