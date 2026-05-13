@@ -71,20 +71,43 @@ The workflow consists of the following steps:
 - Recoding of genotype IDs (Fortran)
 
 ### 3. Matrix Construction
-- Generation of A22 matrix using Relax2 in a 2nd round, using renumbered ped
-- Computation of G⁻¹ and H⁻¹ matrices using hginv from mix99
+Generation of:
+- A22 matrix,
+- G⁻¹ matrix,
+- H⁻¹ matrix.
+
+### Software
+- hginv
+- Relax2
+
+---
 
 ### 4. Genetic Evaluation (Mix99)
-- Preprocessor: mix99i
-- Solver: mix99s
+- Preprocessor: `mix99i`
+- Solver: `mix99s`
 - Estimation of variance components using REML method (mix99s)
 
+### Configuration files
+- [`config/mix99/`](config/mix99/)
+
+---
 ### 5. Reliability Estimation
 - Reliability : apax99
+Outputs include:
+- reliabilities,
+- prediction error variances,
+- EBV summaries.
 
+---
 ### 6. Post-processing
-- Extraction and formatting of EBVs
-- Data transformation and output generation (R)
+Post-processing includes:
+- extraction of EBVs,
+- formatting outputs,
+- generation of final datasets,
+- summary statistics.
+
+### Related scripts
+- [`scripts/postprocessing/`](scripts/postprocessing/)
 
 ### 7. Validation (ongoing)
 Due to current data limitations, full external validation is not yet implemented. Planned validation includes:
@@ -92,6 +115,31 @@ Due to current data limitations, full external validation is not yet implemented
 - Correlations with EBVs from GreenFeed
 - Temporal validation using new data
 - Distribution and consistency checks of EBVs
+
+---
+
+# Example Outputs
+
+## Reliability Distribution
+
+![Reliability distribution](figures/reliability_distribution.png)
+
+## Genetic Trend
+
+![Genetic trend](figures/genetic_trend.png)
+
+---
+
+# Reproducibility
+
+## Requirements
+
+- R >= 4.2
+- Mix99
+- Relax2
+- hginv
+- APAX99
+- GNU Fortran
 
 ---
 
