@@ -12,7 +12,7 @@
 2. record id 1 sire 2 dam 3; if it is integer
 3. record id 1:4 sire 6:9 dam 11:14; if they are integer values within the character positions
 4. record id $ 1:4 sire $ 6:9 dam $ 11:14; if it is alpha-numerical text
-- The fourth column could be the group (genetic group, family group, farm) and it is useful for speeding up the process of solving equations in Mix99 (optional).
+- The fourth column could be the group (genetic group, family group, farm) and it is useful for speeding up the process of solving equations in Mix99 (optional).(link to Rscript to process)
 
 # Genotypes
 - The format has to have ID + space+ genotype(0 1 2), separated by space
