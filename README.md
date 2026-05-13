@@ -1,17 +1,60 @@
 ## Mix99
-Pipeline to use mix99 softwares to estimate GEBVs and the reliability of methane emissions
-# Genetic Evaluation Pipeline for Methane Emissions
 
+# Genetic Evaluation Pipeline for Methane Emissions
+![R](https://img.shields.io/badge/R-Data%20Processing-blue)
+![Fortran](https://img.shields.io/badge/Fortran-Optimization-orange)
+![Mix99](https://img.shields.io/badge/Mix99-Genetic%20Evaluation-green)
+![Status](https://img.shields.io/badge/status-active-success)
+
+---
 ## Overview
 
 This repository contains a fully automated pipeline for the estimation of genomic breeding values (GEBVs) and their reliability for methane emissions.
 
-The workflow integrates data preprocessing in R, pedigree and genotype processing, Fortran-based tools, and genetic evaluation using Mix99 softwares under a ssGBLUP framework.
+The workflow integrates:
+- data preprocessing in R,
+- pedigree and genotype processing,
+- Fortran-based utilities,
+- genetic evaluation using Mix99 under a ssGBLUP framework.
 
 The pipeline is designed to be modular, reproducible, and adaptable to future evaluations.
 
 ---
+# Workflow Diagram
 
+```mermaid
+graph LR
+A[Raw Data] --> B[Cleaning & QC - R]
+B --> C[Relax2 Processing]
+C --> D[Genotype Recoding - Fortran]
+D --> E[A22 / H⁻¹ Construction]
+E --> F[Mix99 Preprocessor]
+F --> G[Mix99 Solver]
+G --> H[EBVs]
+H --> I[Reliability - APAX99]
+I --> J[Post-processing - R]
+J --> K[Validation]
+```
+
+---
+
+# Repository Structure
+
+```bash
+├── data/
+├── scripts/
+│   ├── preprocessing/
+│   ├── mix99/
+│   ├── postprocessing/
+│   └── validation/
+├── fortran/
+├── config/
+├── results/
+├── figures/
+└── README.md
+```
+
+---
 ## Pipeline Structure
 
 The workflow consists of the following steps:
@@ -52,17 +95,4 @@ Due to current data limitations, full external validation is not yet implemented
 
 ---
 
-## Workflow Diagram
 
-```mermaid
-graph TD
-A[Raw Data] --> B[Cleaning & Formatting - R]
-B --> C[Relax2 Processing]
-C --> D[Genotype Recoding - Fortran]
-D --> E[Matrix Construction - hginv]
-E --> F[Mix99 Preprocessor]
-F --> G[Mix99 Solver]
-G --> H[EBVs Output]
-H --> I[Reliability - APAX]
-I --> J[Post-processing - R]
-J --> K[Validation]
