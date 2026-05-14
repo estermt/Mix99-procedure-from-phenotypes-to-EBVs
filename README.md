@@ -70,7 +70,7 @@ The workflow consists of the following steps:
 
 - Recoding of genotype IDs (Fortran)
 ## Related scripts
-[`scripts/Relax2/Relax2_1.dir`]
+- [`scripts/Relax2/Relax2_1.dir`]
 ### 3. Matrix Construction
 Generation of:
 - A22 matrix,
