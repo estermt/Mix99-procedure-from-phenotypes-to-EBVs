@@ -7,4 +7,4 @@ The program then uses this matrix together with genotype data to blend the genom
 The following command computes the lower inverse of the \(G\) matrix blended with 10% of the \(A\) matrix:
 
 ```bash
-hginv -lower -w 0.10 -A amatrix22_2500_5488.amat -m PvR1 genotipos_recod2500_5488 iGL_w20_5488.bin > out_hginv_g.txt
+hginv -lower -w 0.10 -A amatrix.amat -m PvR1 genotypes_recod iGL_w10.bin > out_hginv_g.txt
