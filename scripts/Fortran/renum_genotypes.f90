@@ -1,4 +1,4 @@
-program Extraer_genotipos
+program Recod_genotypes
 implicit none
 
 integer :: i, io, j, cambios, nani1, nani2, nsnp, nid_genot, nid_lista, nid_nuevo
@@ -11,7 +11,7 @@ character (len=50)  :: fmt_lec, fmt_esc, fmt_lista
 character (len=5000):: linea_raw
 
 ! ---------------------------------------------------------------------
-! LECTURA INTERACTIVA
+! READING
 ! ---------------------------------------------------------------------
 write(*,'(a)', advance='no') 'Archivo de genotipos              : '
 read(*,'(a)') archivo_genot
@@ -51,7 +51,7 @@ write(*,*)
 allocate(snp(nsnp))
 
 ! ---------------------------------------------------------------------
-! FORMATOS DINAMICOS
+! DYNAMIC FILE FORMATS
 ! ---------------------------------------------------------------------
 ! Lectura genotipos:  ID snp1 snp2 snp3 ... (separados por espacio)
 write(fmt_lec,   '(a,i0,a,i0,a)') '(a', nid_genot, ',', nsnp, '(1x,i1))'
@@ -68,9 +68,9 @@ write(*,*) 'Formato escritura salida  : ', trim(fmt_esc)
 write(*,*)
 
 ! ---------------------------------------------------------------------
-! DIAGNOSTICO: mostrar primeras 3 lineas de cada archivo
+! DIAGNOSIS: it shows the first three lines of each file
 ! ---------------------------------------------------------------------
-write(*,*) '=== PRIMERAS 3 LINEAS: GENOTIPOS ==='
+write(*,*) '=== FIRST 3 LINES: GENOTYPES ==='
 open(12, file=trim(archivo_genot), form='formatted', status='old')
 do i = 1, 3
   read(12, '(a)', iostat=io) linea_raw
@@ -79,7 +79,7 @@ do i = 1, 3
 end do
 rewind(12)
 
-write(*,*) '=== PRIMERAS 3 LINEAS: LISTA ==='
+write(*,*) '=== FIRST 3 LINES: LIST ==='
 open(11, file=trim(archivo_lista), form='formatted', status='old')
 do i = 1, 3
   read(11, '(a)', iostat=io) linea_raw
@@ -90,7 +90,7 @@ rewind(11)
 write(*,*)
 
 ! ---------------------------------------------------------------------
-! PASO 1: Contar animales en lista
+! STEP 1: Count animals in the list
 ! ---------------------------------------------------------------------
 i = 0
 do
@@ -103,7 +103,7 @@ write(*,*) 'Animales en lista     : ', nani1
 rewind(11)
 
 ! ---------------------------------------------------------------------
-! PASO 2: Contar animales en genotipos
+! STEP 2: Count animals in genotype file
 ! ---------------------------------------------------------------------
 i = 0
 do
@@ -117,7 +117,7 @@ write(*,*) 'Animales en genotipos : ', nani2
 rewind(12)
 
 ! ---------------------------------------------------------------------
-! PASO 3: Cargar lista en memoria
+! STEP 3: Load list into memory
 ! ---------------------------------------------------------------------
 allocate(nac1(nani1), muestra(nani1))
 
@@ -133,7 +133,7 @@ do i = 1, nani1
 end do
 
 ! ---------------------------------------------------------------------
-! PASO 4: Recorrer genotipos y extraer los que estan en la lista
+! STEP 4: Iterate through the genotypes and extract those on the list
 ! ---------------------------------------------------------------------
 cambios = 0
 open(14, file=trim(archivo_salida), form='formatted', status='replace')
@@ -160,9 +160,9 @@ write(*,*)
 write(*,*) cambios, ' genotipos extraidos de ', nani2, ' totales'
 
 ! ---------------------------------------------------------------------
-! LIMPIEZA
+! CLEANING
 ! ---------------------------------------------------------------------
 deallocate(snp, nac1, muestra)
 close(11); close(12); close(14)
 
-end program Extraer_genotipos
+end program Recod_genotypes
