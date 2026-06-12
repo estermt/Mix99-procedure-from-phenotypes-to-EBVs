@@ -13,5 +13,5 @@ hginv -lower -m PvR1 -w 0.10 -A amatrix.amat  genotypes_recod iGL_w10.bin > out_
 While the following command computes the lower inverse of the \(H\) matrix.
 
 ```bash
-hginv -lower -m ost -w 0.10 -a iHL_4858.dat_allelef -A amatrix.amat genotypes_recod iHL_w10.bin > out_hginv_h.txt 
+hginv -lower -m ost -w 0.10 -a freq.dat_allelef -A amatrix.amat genotypes_recod iHL_w10.bin > out_hginv_h.txt 
 ```
