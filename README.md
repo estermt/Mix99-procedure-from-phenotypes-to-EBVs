@@ -78,12 +78,12 @@ Generation of:
 - G⁻¹ matrix,
 - H⁻¹ matrix.
 ## Related scripts
-
+- [[`scripts/Relax2/Relax2_2_matrizA.dir`]](https://github.com/estermt/Mix99-procedure-from-phenotypes-to-EBVs/blob/main/scripts/Relax2/relax2_2_matrizA.dir)
+- [[`scripts/mix99/hginv_param.md`]](https://github.com/estermt/Mix99-procedure-from-phenotypes-to-EBVs/blob/main/scripts/mix99/hginv_param.md)
 ### Software
 - hginv
 - Relax2
 
----
 
 ### 4. Genetic Evaluation (Mix99)
 - Preprocessor: `mix99i`
