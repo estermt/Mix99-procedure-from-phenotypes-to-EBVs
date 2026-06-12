@@ -76,7 +76,7 @@ The workflow consists of the following steps:
 Generation of:
 - A22 matrix,
 - G⁻¹ matrix,
-- H⁻¹ matrix.
+- G⁻¹ - A22⁻¹ matrix.
 ## Related scripts
 - [[`scripts/Relax2/Relax2_2_matrizA.dir`]](https://github.com/estermt/Mix99-procedure-from-phenotypes-to-EBVs/blob/main/scripts/Relax2/relax2_2_matrizA.dir)
 - [[`scripts/mix99/hginv_param.md`]](https://github.com/estermt/Mix99-procedure-from-phenotypes-to-EBVs/blob/main/scripts/mix99/hginv_param.md)
@@ -84,12 +84,16 @@ Generation of:
 - hginv
 - Relax2
 
-
 ### 4. Genetic Evaluation (Mix99)
 - Preprocessor: `mix99i`
 - Solver: `mix99s`
 - Estimation of variance components using REML method (mix99s)
 
+## Related scripts
+
+### Software
+- mix99i
+- mix99s
 ### Configuration files
 - [`config/mix99/`](config/mix99/)
 
