@@ -90,8 +90,8 @@ Generation of:
 - Estimation of variance components using REML method (mix99s)
 
 ## Related scripts
-[[`scripts/mix99/my_model.clm`]](https://github.com/estermt/Mix99-procedure-from-phenotypes-to-EBVs/blob/main/scripts/mix99/my_model.clm)
-[[`scripts/mix99/ch4_sstp.stop`]](https://github.com/estermt/Mix99-procedure-from-phenotypes-to-EBVs/blob/main/scripts/mix99/ch4_sstp.stop)
+- [[`scripts/mix99/my_model.clm`]](https://github.com/estermt/Mix99-procedure-from-phenotypes-to-EBVs/blob/main/scripts/mix99/my_model.clm)
+- [[`scripts/mix99/ch4_sstp.stop`]](https://github.com/estermt/Mix99-procedure-from-phenotypes-to-EBVs/blob/main/scripts/mix99/ch4_sstp.stop)
 ### Software
 - mix99i
 - mix99s
