@@ -1,0 +1,9 @@
+input pedigree # Pedigree input
+file renum_ped.ped # Use this file as pedigree file renumbered
+record id sire dam group  # This input information
+unknown ’0’
+record id
+input animals # Relationship for animals
+file genotipos_ids # in this file include only genotyped to estimate A22 Matrix
+record id # id column
+output overwrite amatrix amatrix22.amat # relationship matrix
