@@ -71,7 +71,7 @@ The workflow consists of the following steps:
 ## Related scripts
 - [[`scripts/Relax2/Relax2_1.dir`]](https://github.com/estermt/Mix99-procedure-from-phenotypes-to-EBVs/blob/main/scripts/Relax2/Relax2_1.dir)
 - [[`scripts/R/Group allocation in pedigree.R`]](https://github.com/estermt/Mix99-procedure-from-phenotypes-to-EBVs/blob/main/scripts/R/Group%20allocation%20in%20pedigree.R)
-- [[`scripts/Fortran/renum_genotypes.f90`]] (https://github.com/estermt/Mix99-procedure-from-phenotypes-to-EBVs/blob/main/scripts/Fortran/renum_genotypes.f90)
+- [[`scripts/Fortran/renum_genotypes.f90`]](https://github.com/estermt/Mix99-procedure-from-phenotypes-to-EBVs/blob/main/scripts/Fortran/renum_genotypes.f90)
 ### 3. Matrix Construction
 Generation of:
 - A22 matrix,
