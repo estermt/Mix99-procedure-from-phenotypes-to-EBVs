@@ -1,16 +1,16 @@
-TITLE Animal Model: methane production
+TITLE Animal Model: methane concentration and production
 
-DATAFILE renum2500_5488.dat
+DATAFILE renu.dat
 INTEGER  animal BLOQUE EL60250 numlact calmonth cogrnu
 REAL meanppm meangd
 MISSING -999.9
-iGFILE LOWER iHL_5488.bin
+iGFILE LOWER iGL_w10.bin
 #iA22FILE PEDIGREE
-PEDFILE renum_pedcompleto2500_5488.ped
+PEDFILE renum_ped.ped
 PEDIGREE G am
-INBRFILE renum_completo2500_5488formix.inbr
+INBRFILE renum_completo_formix.inbr
 INBREEDING PEDIGREECODE=1 FINBR=2
-PARFILE parfile_5488  # variance file
+PARFILE parfile  # variance file
 PRECON      b b       f       # Preconditioner: b=block f=fullblock
 WithinBlock  G PE
 RANDOM   PE G
