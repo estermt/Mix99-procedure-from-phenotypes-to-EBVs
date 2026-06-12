@@ -27,7 +27,7 @@ graph TD
 A[Raw Data] --> B[Cleaning & QC - R]
 B --> C[Relax2 Processing]
 C --> D[Genotype Recoding - Fortran]
-D --> E[A22 / H⁻¹ Construction]
+D --> E[A22 / G⁻¹ Construction]
 E --> F[Mix99 Preprocessor]
 F --> G[Mix99 Solver]
 G --> H[EBVs]
