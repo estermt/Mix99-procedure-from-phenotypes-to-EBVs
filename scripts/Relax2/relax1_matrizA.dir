@@ -1,0 +1,9 @@
+input pedigree # Pedigree input
+file renum_pedcompleto2500_5488.ped # Use this file as pedigree file
+record id sire dam group  # This input information
+unknown ’0’
+record id
+input animals # Relationship for animals
+file genotipos_recod2500_5488 # in this file acá se usa el subset
+record id # id column
+output overwrite amatrix amatrix22_2500_5488.amat # relationship matrix
