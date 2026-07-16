@@ -1,0 +1,20 @@
+# RAM demand: X=large (mix99p only), H=high, M=medium, L=low
+H sp 100 # RAM: RAM demand: H=high, M=medium, L=low
+# STOP: Maximum_number_of_iterations, Stopping_criterion, Criterion (A/R/M/D),enforce (F)
+20000 1.0e-20    D              F
+# RESID: Calculate residuals? (Y/N)
+N 
+# VALID: N=no, P=prediction, S=sum of effects, Y=YD, D=DYD, I=IDD, G=generate
+P 
+# 0 0 0 0 0 1
+# VAROPT: Variance options for VCE, PEV, HV (N,E,P1,P2,P3,S,C)
+ E # f 4 1 2 los que mantienen varianzas fijas
+ # STOPE # REML ROUNDS, nsamples, stopcritVCE, stopBLUPsamples, nLastsamples
+ 1000    20   1.0e-20 1.0e-10 100
+ # SEED
+ D
+ # MIXPATH
+ -
+#N # HETVAR: adjust for HV? (N)o, (S)tart, (C)ontinue), (F)inale iterations.
+# TYPSOL: Solution files? (N)o, (Y)es, (A)itken, (H)alf-Chebychev
+Y 
