@@ -86,8 +86,8 @@ Generation of:
 
 ### 4. Genetic Evaluation (Mix99)
 - Preprocessor: `mix99i`
-- Solver: `mix99s`
 - Estimation of variance components using REML method (mix99s)
+- Solver: `mix99s`
 
 ## Related scripts
 - [[`scripts/mix99/my_model.clm`]](https://github.com/estermt/Mix99-procedure-from-phenotypes-to-EBVs/blob/main/scripts/mix99/my_model.clm)
