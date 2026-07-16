@@ -106,7 +106,8 @@ Outputs include:
 - reliabilities,
 - prediction error variances,
 - EBV summaries.
-
+### Related scripts
+- [`scripts/postprocessing/`](scripts/postprocessing/)
 ---
 ### 6. Post-processing
 Post-processing includes:
@@ -117,6 +118,9 @@ Post-processing includes:
 
 ### Related scripts
 - [`scripts/postprocessing/`](scripts/postprocessing/)
+
+### Statistics
+
 
 ### 7. Validation (ongoing)
 Due to current data limitations, full external validation is not yet implemented. Planned validation includes:
