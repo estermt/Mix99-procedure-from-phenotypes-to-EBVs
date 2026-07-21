@@ -1,0 +1,15 @@
+# reliability method==> Misztal and Wiggans (1988)
+2 # G0 default wo genomic inf
+# number of non-zeros in sparse matrix
+100000000
+# original dir file
+ MiX99_DIR.DIR
+# EBV , only for multitrait
+ 2 
+ # wheight
+ 1 0
+ 0 1
+# H2calc
+1
+# J filter 
+2
