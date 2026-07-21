@@ -103,16 +103,16 @@ Generation of:
 ### 5. Reliability Estimation
 - Reliability : apax99
 Outputs include:
-- reliabilities, using A, G [`scripts/mix99/ReadME_apax99.md`](scripts/mix99/ReadME_apax99.md) and 7 steps reliability processing
+- reliabilities, using A, G [[`scripts/mix99/ReadME_apax99.md`]](scripts/mix99/ReadME_apax99.md) and 7 steps reliability processing
 - prediction error variances,
 - EBV summaries.
 ### Related scripts
-- [`scripts/mix99/apax99_m2_G0.dir`](scripts/mix99/apax99_m2_G0.dir/)
-- [`scripts/mix99/apax99_m2_G1.dir`](scripts/mix99/apax99_m2_G1.dir/)
-- [`scripts/mix99/apax99_m2_G2.dir`](scripts/mix99/apax99_m2_G2.dir/)
-- [`scripts/mix99/apax99_m4_G0.dir`](scripts/mix99/apax99_m4_G0.dir/)
-- [`scripts/mix99/apax99_m4_G1.dir`](scripts/mix99/apax99_m4_G1.dir/)
-- [`scripts/mix99/apax99_m4_G2.dir`](scripts/mix99/apax99_m4_G2.dir/)
+- [[`scripts/mix99/apax99_m2_G0.dir`]](scripts/mix99/apax99_m2_G0.dir/)
+- [[`scripts/mix99/apax99_m2_G1.dir`]](scripts/mix99/apax99_m2_G1.dir/)
+- [[`scripts/mix99/apax99_m2_G2.dir`]](scripts/mix99/apax99_m2_G2.dir/)
+- [[`scripts/mix99/apax99_m4_G0.dir`]](scripts/mix99/apax99_m4_G0.dir/)
+- [[`scripts/mix99/apax99_m4_G1.dir`]](scripts/mix99/apax99_m4_G1.dir/)
+- [[`scripts/mix99/apax99_m4_G2.dir`]](scripts/mix99/apax99_m4_G2.dir/)
 ---
 ### 6. Post-processing
 Post-processing includes:
@@ -122,7 +122,7 @@ Post-processing includes:
 - summary statistics.
 
 ### Related scripts
-- [`scripts/postprocessing/`](scripts/postprocessing/)
+- [[`scripts/postprocessing/`]](scripts/postprocessing/)
 
 ### Statistics
 
