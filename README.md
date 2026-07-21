@@ -103,7 +103,7 @@ Generation of:
 ### 5. Reliability Estimation
 - Reliability : apax99
 Outputs include:
-- reliabilities, using A, G and 7 steps reliability processing
+- reliabilities, using A, G [scripts/mix99/ReadME_apax99.md] and 7 steps reliability processing
 - prediction error variances,
 - EBV summaries.
 ### Related scripts
