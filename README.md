@@ -107,7 +107,12 @@ Outputs include:
 - prediction error variances,
 - EBV summaries.
 ### Related scripts
-- [`scripts/postprocessing/`](scripts/mix99/apax99_dce_m2.dir/)
+- [`scripts/postprocessing/`](scripts/mix99/apax99_m2_G0.dir/)
+- [`scripts/postprocessing/`](scripts/mix99/apax99_m2_G1.dir/)
+- [`scripts/postprocessing/`](scripts/mix99/apax99_m2_G2.dir/)
+- [`scripts/postprocessing/`](scripts/mix99/apax99_m4_G0.dir/)
+- [`scripts/postprocessing/`](scripts/mix99/apax99_m4_G1.dir/)
+- [`scripts/postprocessing/`](scripts/mix99/apax99_m4_G2.dir/)
 ---
 ### 6. Post-processing
 Post-processing includes:
